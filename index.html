@@ -3,27 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-     <link rel="icon" type="image/png" href="temi.jpg" />
     <title>Temidayo Akanbi-Bello | Profile Card</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="temi.jpg" />
+
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
     <main class="container">
       <article data-testid="test-profile-card" class="profile-card">
+        <!-- Avatar Section -->
         <figure class="avatar-section">
           <img
+            id="avatarImage"
             src="temi.jpg"
             alt="Temidayo Akanbi-Bello"
             data-testid="test-user-avatar"
           />
-          <figcaption data-testid="test-user-name">Temidayo Akanbi-Bello</figcaption>
+          <figcaption data-testid="test-user-name">
+            Temidayo Akanbi-Bello
+          </figcaption>
+
+          <!-- Upload new avatar -->
+          <label for="avatarUpload" class="upload-btn">Upload New Avatar</label>
+          <input type="file" id="avatarUpload" accept="image/*" hidden />
         </figure>
 
+        <!-- Info -->
         <section class="profile-info">
           <p data-testid="test-user-bio">
-            A passionate full-stack developer dedicated to building impactful, user-centered
-            digital solutions using React, Node.js, and modern web technologies.
+            A passionate full-stack developer dedicated to building impactful,
+            user-centered digital solutions using React, Node.js, and modern web
+            technologies.
           </p>
           <p class="time">
             <strong>Current Time (ms):</strong>
@@ -31,33 +45,58 @@
           </p>
         </section>
 
+        <!-- Social Links -->
         <nav data-testid="test-user-social-links" class="social-links">
           <a
-            href="https://github.com/themydee"
+            href="https://github.com/themydeea"
             data-testid="test-user-social-github"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+              alt="GitHub"
+            />
           </a>
+
           <a
             href="https://www.linkedin.com/in/akanbi-bello-temidayo-015b1a141/"
             data-testid="test-user-social-linkedin"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" />
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/174/174857.png"
+              alt="LinkedIn"
+            />
           </a>
+
           <a
             href="https://x.com/Themydee2001"
             data-testid="test-user-social-twitter"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter" />
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/733/733579.png"
+              alt="Twitter"
+            />
+          </a>
+
+          <a
+            href="https://www.instagram.com/themy_dee"
+            data-testid="test-user-social-instagram"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png"
+              alt="Instagram"
+            />
           </a>
         </nav>
 
+        <!-- Lists -->
         <div class="lists">
           <section data-testid="test-user-hobbies" class="hobbies">
             <h3>Hobbies</h3>

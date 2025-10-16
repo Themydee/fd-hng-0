@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <link rel="icon" type="image/png" href="temi.jpg" />
+    <title>Temidayo Akanbi-Bello | Profile Card</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main class="container">
+      <article data-testid="test-profile-card" class="profile-card">
+        <figure class="avatar-section">
+          <img
+            src="temi.jpg"
+            alt="Temidayo Akanbi-Bello"
+            data-testid="test-user-avatar"
+          />
+          <figcaption data-testid="test-user-name">Temidayo Akanbi-Bello</figcaption>
+        </figure>
+
+        <section class="profile-info">
+          <p data-testid="test-user-bio">
+            A passionate full-stack developer dedicated to building impactful, user-centered
+            digital solutions using React, Node.js, and modern web technologies.
+          </p>
+          <p class="time">
+            <strong>Current Time (ms):</strong>
+            <span data-testid="test-user-time" id="userTime"></span>
+          </p>
+        </section>
+
+        <nav data-testid="test-user-social-links" class="social-links">
+          <a
+            href="https://github.com/themydee"
+            data-testid="test-user-social-github"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/akanbi-bello-temidayo-015b1a141/"
+            data-testid="test-user-social-linkedin"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" />
+          </a>
+          <a
+            href="https://x.com/Themydee2001"
+            data-testid="test-user-social-twitter"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter" />
+          </a>
+        </nav>
+
+        <div class="lists">
+          <section data-testid="test-user-hobbies" class="hobbies">
+            <h3>Hobbies</h3>
+            <ul>
+              <li>Coding</li>
+              <li>Music</li>
+              <li>Sports</li>
+            </ul>
+          </section>
+
+          <section data-testid="test-user-dislikes" class="dislikes">
+            <h3>Dislikes</h3>
+            <ul>
+              <li>Power Outages</li>
+              <li>Procrastination</li>
+              <li>Poor Documentation</li>
+            </ul>
+          </section>
+        </div>
+      </article>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

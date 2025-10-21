@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Akanbi-Bello Temidayo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="nav-logo">
+          <h1>Temidayo</h1>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html" data-testid="test-nav-index">Home</a></li>
+          <li><a href="about.html" data-testid="test-nav-about">About</a></li>
+          <li><a href="contact.html" class="active" data-testid="test-nav-contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main data-testid="test-contact-page" class="about-container">
+      <div class="about-header">
+        <h2>Contact Me</h2>
+        <p class="subtitle">I'd love to hear from you — send a message below.</p>
+      </div>
+
+      <section class="about-section">
+        <form id="contactForm" class="contact-form" novalidate>
+          <label for="name">Full Name</label>
+          <input id="name" data-testid="test-contact-name" required />
+          <span id="error-name" data-testid="test-contact-error-name" class="error-msg"></span>
+
+          <label for="email">Email</label>
+          <input id="email" type="email" data-testid="test-contact-email" required />
+          <span id="error-email" data-testid="test-contact-error-email" class="error-msg"></span>
+
+          <label for="subject">Subject</label>
+          <input id="subject" data-testid="test-contact-subject" required />
+          <span id="error-subject" data-testid="test-contact-error-subject" class="error-msg"></span>
+
+          <label for="message">Message</label>
+          <textarea id="message" data-testid="test-contact-message" rows="6" required></textarea>
+          <span id="error-message" data-testid="test-contact-error-message" class="error-msg"></span>
+
+          <button type="submit" class="submit-btn" data-testid="test-contact-submit">Send Message</button>
+
+          <p id="formMessage" class="feedback" aria-live="polite"></p>
+        </form>
+      </section>
+
+      <nav class="extra-links" style="text-align:center; margin-top:1rem;">
+        <a href="index.html" data-testid="test-nav-index">Home</a> •
+        <a href="about.html" data-testid="test-nav-about">About</a>
+      </nav>
+    </main>
+
+    <footer>
+      <p>&copy; 2023 Akanbi-Bello Temidayo. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

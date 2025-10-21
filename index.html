@@ -13,16 +13,30 @@
   </head>
 
   <body>
-    <main class="container">
+
+     <header>
+      <nav class="navbar">
+        <div class="nav-logo">
+          <h1>Temidayo</h1>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html" class="active" data-testid="test-nav-index">Home</a></li>
+          <li><a href="about.html" data-testid="test-nav-about">About</a></li>
+          <li><a href="contact.html" data-testid="test-nav-contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container">      
       <article data-testid="test-profile-card" class="profile-card">
         <!-- Avatar Section -->
         <figure class="avatar-section">
-          <img
-            id="avatarImage"
-            src="temi.jpg"
-            alt="Temidayo Akanbi-Bello"
-            data-testid="test-user-avatar"
-          />
+            <img
+                id="avatarImage"
+                src="temi.jpg"
+                alt="Temidayo Akanbi-Bello"
+                data-testid="test-user-avatar"
+            />
           <figcaption data-testid="test-user-name">
             Temidayo Akanbi-Bello
           </figcaption>
@@ -31,7 +45,6 @@
           <label for="avatarUpload" class="upload-btn">Upload New Avatar</label>
           <input type="file" id="avatarUpload" accept="image/*" hidden />
         </figure>
-
         <!-- Info -->
         <section class="profile-info">
           <p data-testid="test-user-bio">
